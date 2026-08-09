@@ -9,3 +9,8 @@ dist/
 
 .DS_Store
 Thumbs.db
+firebase-private-key.json
+service-account.json
+
+*.pem
+*.key
