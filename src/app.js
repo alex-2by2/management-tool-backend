@@ -1,3 +1,15 @@
+const createSessionRoutes =
+  require(
+    './modules/sessions/session.routes',
+  );
+
+app.use(
+  '/api/v1/sessions',
+  createSessionRoutes(
+    config,
+  ),
+);
+
 const createOwnerSessionRoutes =
   require(
     './modules/owner/owner-session.routes',
