@@ -1,3 +1,15 @@
+const createOwnerDashboardRoutes =
+  require(
+    './modules/owner/owner-dashboard.routes',
+  );
+
+app.use(
+  '/api/v1/owner',
+  createOwnerDashboardRoutes(
+    config,
+  ),
+);
+
 const createSessionRoutes =
   require(
     './modules/sessions/session.routes',
